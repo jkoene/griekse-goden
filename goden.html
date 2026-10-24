@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>De Griekse Goden</title>
+  <link rel="stylesheet" href="css/stijl.css">
+</head>
+<body>
+  <header class="kop">
+    <h1>De Goden van de Olympus</h1>
+    <p class="ondertitel">Klik op een god om meer te ontdekken<span class="docent-badge">docentmodus</span></p>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="goden.html" aria-current="page">De Goden</a>
+      <a href="quiz.html">De Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="filter">
+      <p>Zoek goden met een kenmerk:</p>
+      <div id="filter"></div>
+    </section>
+
+    <h2 class="geen-print">De twaalf Olympiërs</h2>
+    <div class="raster" id="olympiers"></div>
+
+    <h2 style="margin-top:2rem">Nog meer bekende goden</h2>
+    <div class="raster" id="anderen"></div>
+  </main>
+
+  <footer class="voet">
+    Afbeeldingen: Wikimedia Commons (publiek domein / vrije licenties, zie elke god).
+    <button class="slotje" id="slotje" title="Docentmodus">🔒</button>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/docent.js"></script>
+  <script src="js/detail.js"></script>
+  <script src="js/goden.js"></script>
+</body>
+</html>

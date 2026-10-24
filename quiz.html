@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welke god past bij jou?</title>
+  <link rel="stylesheet" href="css/stijl.css">
+</head>
+<body>
+  <header class="kop">
+    <h1>Het Orakel van Delphi</h1>
+    <p class="ondertitel">Welke Griekse god lijkt op jou?<span class="docent-badge">docentmodus</span></p>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="goden.html">De Goden</a>
+      <a href="quiz.html" aria-current="page">De Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Start -->
+    <section class="paneel" id="scherm-start">
+      <h2>Γνῶθι σεαυτόν</h2>
+      <p><em>"Ken jezelf"</em> stond er boven de ingang van de tempel van Apollo in Delphi. Daar ging je naartoe met je vragen, en het orakel gaf antwoord.</p>
+      <p>Beantwoord de 15 vragen. Er zijn geen goede of foute antwoorden: kies steeds wat het meest bij <strong>jou</strong> past. Daarna vertelt het orakel op welke goden jij lijkt.</p>
+      <p><label for="naam"><strong>Wat is je naam?</strong></label><br>
+        <input type="text" id="naam" autocomplete="off" maxlength="40" placeholder="Vul je naam in"></p>
+      <button class="knop" id="start">Raadpleeg het orakel</button>
+    </section>
+
+    <!-- Vraag -->
+    <section class="paneel" id="scherm-vraag" hidden>
+      <div class="voortgang">
+        <span id="teller">Vraag 1 van 15</span>
+        <div class="balk"><span id="voortgang" style="width:0%"></span></div>
+      </div>
+      <h2 class="vraag" id="vraag"></h2>
+      <div class="antwoorden" id="antwoorden"></div>
+      <div class="quiz-knoppen">
+        <button class="knop licht" id="terug">← Vorige</button>
+      </div>
+    </section>
+
+    <!-- Uitslag -->
+    <section class="paneel breed" id="scherm-uitslag" hidden></section>
+  </main>
+
+  <footer class="voet">
+    Het Orakel van Delphi · een quiz over jezelf en de Griekse goden
+    <button class="slotje" id="slotje" title="Docentmodus">🔒</button>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/docent.js"></script>
+  <script src="js/detail.js"></script>
+  <script src="js/score.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
